@@ -1,0 +1,7 @@
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.Linq.Expressions;
+global using Microsoft.EntityFrameworkCore;
+global using RepositoryEntityFrameworkSqlServer.Context;
+global using RepositoryEntityFrameworkSqlServer.Entities;
+global using RepositoryEntityFrameworkSqlServer.Entities.Constants;
+global using RepositoryEntityFrameworkSqlServer.Mappers;
