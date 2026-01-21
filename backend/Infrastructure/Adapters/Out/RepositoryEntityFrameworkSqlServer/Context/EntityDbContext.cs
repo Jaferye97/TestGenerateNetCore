@@ -13,5 +13,5 @@ public class EntityDbContext : DbContext
     { }
 
     // Example
-    // public DbSet<SupplierEntity> Supplier { get; set; }
+    public DbSet<SupplierEntity> Supplier { get; set; }
 }

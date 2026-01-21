@@ -1,7 +1,7 @@
 using Application.Ports.Persistence;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace RepositoryEntityFrameworkSqlServerV2.Persistence.EntityFramework;
+namespace RepositoryEntityFrameworkSqlServer.Persistence.EntityFramework;
 
 public class UnitOfWork(EntityDbContext context) : IUnitOfWork
 {

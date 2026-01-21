@@ -1,1 +1,4 @@
+global using Application.Ports.RepositoryEntityFrameworkSqlServer;
 global using Microsoft.AspNetCore.Mvc;
+global using RepositoryEntityFrameworkSqlServer.Repositories;
+global using RepositoryEntityFrameworkSqlServer.Repositories.Implementations;
