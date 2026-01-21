@@ -1,0 +1,23 @@
+export const PEOPLE_DUMMY_DATA = [
+  { id: 1, name: 'Juan', lastName: 'Pérez', age: 30, email: 'juan.perez@test.com' },
+  { id: 2, name: 'María', lastName: 'Gómez', age: 25, email: 'maria.gomez@test.com' },
+  { id: 3, name: 'Carlos', lastName: 'Rodríguez', age: 35, email: 'carlos.rodriguez@test.com' },
+  { id: 4, name: 'Ana', lastName: 'Martínez', age: 28, email: 'ana.martinez@test.com' },
+  { id: 5, name: 'Luis', lastName: 'Hernández', age: 40, email: 'luis.hernandez@test.com' },
+  { id: 6, name: 'Sofía', lastName: 'Ramírez', age: 22, email: 'sofia.ramirez@test.com' },
+  { id: 7, name: 'Andrés', lastName: 'Torres', age: 33, email: 'andres.torres@test.com' },
+  { id: 8, name: 'Laura', lastName: 'Flores', age: 27, email: 'laura.flores@test.com' },
+  { id: 9, name: 'Diego', lastName: 'Morales', age: 31, email: 'diego.morales@test.com' },
+  { id: 10, name: 'Paula', lastName: 'Castro', age: 29, email: 'paula.castro@test.com' },
+
+  { id: 11, name: 'Miguel', lastName: 'Ortiz', age: 45, email: 'miguel.ortiz@test.com' },
+  { id: 12, name: 'Valentina', lastName: 'Rojas', age: 24, email: 'valentina.rojas@test.com' },
+  { id: 13, name: 'Jorge', lastName: 'Navarro', age: 38, email: 'jorge.navarro@test.com' },
+  { id: 14, name: 'Camila', lastName: 'Vargas', age: 26, email: 'camila.vargas@test.com' },
+  { id: 15, name: 'Ricardo', lastName: 'Mendoza', age: 42, email: 'ricardo.mendoza@test.com' },
+  { id: 16, name: 'Daniela', lastName: 'Suárez', age: 23, email: 'daniela.suarez@test.com' },
+  { id: 17, name: 'Felipe', lastName: 'Cruz', age: 34, email: 'felipe.cruz@test.com' },
+  { id: 18, name: 'Natalia', lastName: 'Reyes', age: 32, email: 'natalia.reyes@test.com' },
+  { id: 19, name: 'Sebastián', lastName: 'León', age: 28, email: 'sebastian.leon@test.com' },
+  { id: 20, name: 'Alejandra', lastName: 'Peña', age: 36, email: 'alejandra.pena@test.com' },
+];

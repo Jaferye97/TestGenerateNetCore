@@ -1,0 +1,86 @@
+<h4 class="text-center">People</h4>
+
+<form [formGroup]="form" class="p-4 mb-4 border rounded shadow-sm">
+  <div class="row g-3">
+    <div class="col-md-3">
+      <mat-form-field appearance="fill" class="w-100">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-3">
+      <mat-form-field appearance="fill" class="w-100">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" />
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-3">
+      <mat-form-field appearance="fill" class="w-100">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" />
+      </mat-form-field>
+    </div>
+
+    <div class="col-md-3">
+      <mat-form-field appearance="fill" class="w-100">
+        <mat-label>Age</mat-label>
+        <input matInput type="number" formControlName="age" />
+      </mat-form-field>
+    </div>
+  </div>
+</form>
+
+<!-- Loading -->
+<div class="text-center my-4" *ngIf="loadingSearch">
+  <mat-spinner diameter="40"></mat-spinner>
+</div>
+
+<table
+  mat-table
+  [dataSource]="people"
+  matSort
+  class="mat-elevation-z2 w-100"
+  *ngIf="!loadingSearch"
+>
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="name">Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <!-- Last Name Column -->
+  <ng-container matColumnDef="lastName">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="lastName">
+      Last Name
+    </th>
+    <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+  </ng-container>
+
+  <!-- Age Column -->
+  <ng-container matColumnDef="age">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="age">Age</th>
+    <td mat-cell *matCellDef="let element">{{ element.age }}</td>
+  </ng-container>
+
+  <!-- Email Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="email">Email</th>
+    <td mat-cell *matCellDef="let element">{{ element.email }}</td>
+  </ng-container>
+
+  <!-- Actions Column -->
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <span class="text-danger fw-bold me-3 cursor-pointer">VIEW ORDERS</span>
+      <span class="text-success fw-bold cursor-pointer">NEW ORDER</span>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+
+<mat-paginator [pageSize]="10" showFirstLastButtons></mat-paginator>
